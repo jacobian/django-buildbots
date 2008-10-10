@@ -3,3 +3,4 @@
 */eggs
 */parts
 */.installed.cfg
+*.pyc
