@@ -1,0 +1,117 @@
+/* JOURNAL-WORLD CSS FRAMEWORK - used with permission. */
+
+/* DEFAULT STYLES FOR (X)HTML ELEMENTS
+-------------------------------------------------------------------------------- */
+
+body,ul,ol,dl,h1,h2,h3,h4,h5,h6,td,th,caption,pre,p,blockquote,input,textarea {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #222;
+  text-shadow: 0 0 0 #000;
+}
+
+a { 
+  color: blue;
+  text-decoration: none; 
+  outline:none;
+}
+
+a:hover { text-decoration: underline; }
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+/*
+.unit h1:first-child, 
+.unit h2:first-child, 
+.unit h3:first-child, 
+.unit h4:first-child, 
+.unit h5:first-child,
+.unit h6:first-child {
+  margin-top: 0 !important;
+}
+*/
+
+h1 { font-size: 36px; line-height: 36px; padding-top: 18px; padding-bottom: 18px; }
+h2 { font-size: 28px; line-height: 36px; padding-top: 9px; padding-bottom: 9px; }
+h3 { font-size: 18px; line-height: 18px; padding-top: 9px; padding-bottom: 9px; }
+h4 { font-size: 14px; line-height: 18px; padding-top: 9px; padding-bottom: 9px; }
+h5 { font-size: 12px; line-height: 18px; padding-top: 9px; padding-bottom: 9px; }
+h6 { font-size: 10px; line-height: 18px; padding-top: 9px; padding-bottom: 9px; }
+
+p { margin: 0 0 18px 0; }
+
+ul, ol {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding-left: 16px;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+ol { list-style-type: decimal; }
+dl {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+dl dt {
+  font-weight: bold;
+}
+
+
+blockquote {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding-left: 17px;
+  border-left: 1px solid #666;
+  font-style: italic;
+}
+blockquote * { color: #666; }
+
+strong { font-weight: bold; }
+
+em { font-style: italic; }
+
+/* DEFAULT STYLES FOR COMMON CLASSES
+-------------------------------------------------------------------------------- */
+
+.small {
+  font-size: 10px;
+  line-height: 18px;
+}
+
+.large {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.quiet {
+  color: #666;
+}
+
+
+/* EXTRA DEFAULT STYLES FOR COMMON TYPOGRAPHIC IDIOMS
+-------------------------------------------------------------------------------- */
+
+.footnotes {
+  border-top: 1px solid #666;
+  margin-top: -1px;
+  color: #666;
+  font-size: 10px;
+}
+
+/* BUG: This currenty relies on daisy-chained class selectors, which IE doesnt support. Need to find another way. */
+.sidenote.right { float: right; }
+  .sidenote.right.span1 { margin-right: -60px; }
+  .sidenote.right.span2 { margin-right: -120px; }
+  .sidenote.right.span3 { margin-right: -180px; }
+  .sidenote.right.span4 { margin-right: -240px; }
+
+.sidenote.left { float: left; }
+  .sidenote.left.span1 { margin-left: -60px; }
+  .sidenote.left.span2 { margin-left: -120px; }
+  .sidenote.left.span3 { margin-left: -180px; }
+  .sidenote.left.span4 { margin-left: -240px; }
