@@ -4,9 +4,6 @@ Django's buildbots
 Utilities for configuring and running Django's buildbot and build slaves. This
 is based around `zc.buildout`_ and the `collective.buildbot`_ recipe.
 
-These aren't actually running on http://buildbot.djangoproject.com/ yet, but
-they will soon.
-
 The master config is here mostly for others to look at for example. The useful
 bit is in the slave.
 
@@ -50,6 +47,10 @@ Setting up a build slave
 
 7. Start the slave: ``./bin/<my-slave-name> start``
 
-8. Send the buildbot name and password to XXX FIXME.
+8. Send the buildbot name and password to *jacob -at- jacobian -dot- org* to get
+   added to the master.
+   
+9. Watch your buildbot: if it starts failing because of problems on the server
+   it'll get de-listed.
 
 .. _the build slave recipe: http://pypi.python.org/pypi/collective.buildbot/0.3.3#the-build-slave-recipe
