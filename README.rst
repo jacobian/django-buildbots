@@ -8,7 +8,7 @@ These aren't actually running on http://buildbot.djangoproject.com/ yet, but
 they will soon.
 
 The master config is here mostly for others to look at for example. The useful
-but is in the slave.
+bit is in the slave.
 
 .. _zc.buildout: http://pypi.python.org/pypi/zc.buildout
 .. _collective.buildbot: http://pypi.python.org/pypi/zc.buildout
