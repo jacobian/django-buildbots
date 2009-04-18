@@ -26,30 +26,31 @@ Setting up a build slave
    See the documentation for `the build slave recipe`_ for more
    info on the build slave options.
    
-3. Give the slave a good, unique name that'll tell what it is and what it does
-   (i.e. ``osx-10.5-python2.5-sqlite``, ``ubuntu-hardy-python2.6-mysql-5.0``,
-   etc.)
+3. Give the slave a good, unique name that'll tell what it is and what it
+   does (i.e. ``osx-10.5-python2.5-sqlite``,
+   ``ubuntu-hardy-python2.6-mysql-5.0``, etc.)
 
 4. Make up a slave password.
    
 5. Make sure the slave environment has ``DJANGO_SETTINGS_MODULE`` and
-   ``PYTHONPATH`` set correctly, and make sure that ``DJANGO_SETTINGS_MODULE``
-   exists and is configured correctly.
-   
-   Note that the same slave may test multiple branches, so you'll need to make
-   sure that nothing's shared between the slaves. See
-   ``testsettings/postgres.py`` for one of the things you'll need to do: set
-   ``TEST_DATABASE_NAME`` to something that'll be different for each slave.
+   ``PYTHONPATH`` set correctly, and make sure that
+   ``DJANGO_SETTINGS_MODULE`` exists and is configured correctly.
 
+    Note that the same slave may test multiple branches, so you'll need to
+    make sure that nothing's shared between the slaves. See
+    ``testsettings/postgres.py`` for one of the things you'll need to do:
+    set ``TEST_DATABASE_NAME`` to something that'll be different for each
+    slave.
 
-6. Create the buildbot by running ``./bin/buildout`` from the slave directory.
+6. Create the buildbot by running ``./bin/buildout`` from the slave
+   directory.
 
 7. Start the slave: ``./bin/<my-slave-name> start``
 
-8. Send the buildbot name and password to *jacob -at- jacobian -dot- org* to get
-   added to the master.
+8. Send the buildbot name and password to *jacob -at- jacobian -dot- org*
+   to get added to the master.
    
-9. Watch your buildbot: if it starts failing because of problems on the server
-   it'll get de-listed.
+9. Watch your buildbot: if it starts failing because of problems on the
+   server it'll get de-listed.
 
 .. _the build slave recipe: http://pypi.python.org/pypi/collective.buildbot/0.3.3#the-build-slave-recipe

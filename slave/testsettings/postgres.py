@@ -11,3 +11,4 @@ DATABASE_USER = 'jacob'
 # Make sure we get a distinct test database name -- this
 # settings file might be used to run multiple tests.
 TEST_DATABASE_NAME = "djangotests_%s" % (os.getpid())
+TEST_DATABASE_CHARSET = 'UTF8'
