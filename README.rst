@@ -15,9 +15,8 @@ Setting up a build slave
 
 1. Bootstrap ``zc.buildout``::
 
-        easy_install zc.buildout
         cd slave/
-        buildout init
+        python bootstrap.py
     
 2. Edit ``slave/buildout.cfg`` for your environment. The version
    here has configs for a couple of slaves (one that tests against
