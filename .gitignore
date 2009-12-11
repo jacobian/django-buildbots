@@ -4,3 +4,4 @@
 */parts
 */.installed.cfg
 *.pyc
+*/setuptools-*.egg
