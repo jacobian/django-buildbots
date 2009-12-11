@@ -1,6 +1,6 @@
 @import "type.css";
 
-body { padding:10px;font-size:12px; color:#999; }
+body { padding:10px;font-size:11px; color:#999; }
 a {color:#999; text-decoration: underline;}
 hr {display:none;}
 
@@ -9,7 +9,7 @@ table td {font-size:13px; padding:1px 5px; border:1px solid #99B195; border-bott
 td a {color:#081E75;}
 
 .Event {color:#999; font-size:11px;}
-.Builder {font-size:12px;}
+.Builder {font-size:11px;}
 .LastBuild td { border-bottom:1px solid #bbb; }
 .Activity td { background:#f9f9f9; border-bottom:1px solid #ddd; }
 tr td.Builder {background:#e9eae9; border-bottom:1px solid #ddd;}
