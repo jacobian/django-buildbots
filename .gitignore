@@ -4,3 +4,4 @@
 */parts
 */.installed.cfg
 *.pyc
+*/setuptools-0.6c11-py2.5.egg
