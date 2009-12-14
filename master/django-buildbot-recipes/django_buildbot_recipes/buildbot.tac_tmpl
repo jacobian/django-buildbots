@@ -1,0 +1,14 @@
+from twisted.application import service
+from buildbot.master import BuildMaster
+import os
+import sys
+import django_buildbot_recipes
+
+basedir = r'%(base_dir)s'
+buildbot = os.path.dirname(django_buildbot_recipes.__file__)
+
+configfile = os.path.join(buildbot, 'master.py')
+application = service.Application('buildmaster')
+
+master = BuildMaster(basedir, configfile)
+master.setServiceParent(application)

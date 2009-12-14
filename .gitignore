@@ -5,3 +5,4 @@
 */.installed.cfg
 *.pyc
 */setuptools-*.egg
+*.tmproj
